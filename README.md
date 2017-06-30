@@ -1,10 +1,14 @@
 # Kotlin
 Kotlin is a new programming language from JetBrains, the maker of the world’s best IDEs. After much searching, I have settled on it as the programming language I will probably use for the next 5–10 years or so.
+
 I like Kotlin a lot and think it will be a very successful project. Someone who saw me using it in my open source work asked me to write about it, so in this article I’ll explain why I think Kotlin is good. Then I will discuss some of the problems and hiccups you may encounter if you start using it today. Finally, I’ll argue that now Kotlin is on the scene you should consider using the JVM if you aren’t already (e.g. because you use Go or Node).
-#Why Kotlin is good
+
+##Why Kotlin is good
+___
 At first this article may seem strange: normally language advocacy articles start by listing all the cool features the new language has. This article does not; we will get to them later.
 I am going to start by telling you about other things, because a 2013 study showed that language features matter little compared to ecosystem issues when developers evaluate programming languages. That tallies with my own experience, so, here we go:
 Kotlin compiles to JVM bytecode or JavaScript. It is not a language you will write a kernel in. It is of greatest interest to people who work with Java today, although it could appeal to all programmers who use a garbage collected runtime, including people who currently use Scala, Go, Python, Ruby and JavaScript.
+
 Kotlin comes from industry, not academia. It solves problems faced by working programmers today. As an example, the type system helps you avoid null pointer exceptions. Research languages tend to just not have null at all, but this is of no use to people working with large codebases and APIs which do.
 Kotlin costs nothing to adopt! It’s open source, but that’s not what I mean here. What I mean is there’s a high quality, one-click Java to Kotlin converter tool, and a strong focus on Java binary compatibility. You can convert an existing Java project one file at a time and everything will still compile, even for complex programs that run to millions of lines of code. This is how I am adopting Kotlin and I expect it to be how most developers do.
 As an obvious implication of the above, Kotlin programs can use all existing Java frameworks and libraries, even advanced frameworks that rely on annotation processing. The interop is seamless and does not require wrappers or adapter layers. It integrates with Maven, Gradle and other build systems.
